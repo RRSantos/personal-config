@@ -58,12 +58,12 @@ if version >= 500
 
 endif
 
-colorscheme monokai
+colorscheme ego
 set ts=4
 set sw=4
 set nu
 nnoremap S "_diwP
-set guifont=Consolas:h10:cANSI
+set guifont=DejaVuSansMono
 set lines=999 columns=135
 set ls=2
 set completeopt=menuone,longest " simple autocomplete for anything
