@@ -2,7 +2,7 @@
 $rcFiles = "windows\*"
 $vimFiles = @("colors", "doc", "ftdetect", "ftplugin", "indent", "syntax")
 $userPath =  $env:userprofile
-$vimUserConfigPath = "$userPath.vim"
+$vimUserConfigPath = "$userPath\.vim"
 
 Copy-Item $rcFiles -Destination $userPath -force
 
