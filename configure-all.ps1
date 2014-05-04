@@ -1,7 +1,16 @@
 #This script will run all instalation/customization scripts
 
+function ExecuteScript([string]$path, [string]$script)
+{
+	$originalPath = Get-Location
+	Set-Location $path
+	. ".\$script"
+	Set-Location $originalPath
+}
+
+
 #Vim configuration
-. .\vim\config-vim.ps1
+ExecuteScript "vim" "config-vim.ps1"
 
 #Install fonts
-. .\fonts\install-fonts.ps1
+ExecuteScript "fonts" "install-fonts.ps1"
